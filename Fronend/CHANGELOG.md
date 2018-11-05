@@ -1,0 +1,195 @@
+# 2.4.0 (2018-11-03)
+
+### Features:
+
+- **angular:** added Angular 7 support ([feature request](https://github.com/nkoehler/mat-video/issues/5))
+
+### Bug Fixes:
+
+- **dependencies:** updated Angular to the latest version
+- **dependencies:** updated Angular Material to the latest version
+
+
+
+# 2.3.0 (2018-08-04)
+
+### Features:
+
+- **events:** added experimental support for listening to HTML5 video events
+
+### Bug Fixes:
+
+- **player:** added null checks when manually reloading the video
+- **dependencies:** updated Angular to the latest version
+- **dependencies:** updated Angular Material to the latest version
+
+
+
+# 2.2.0 (2018-05-14)
+
+### Features:
+
+- **source:** added support for multiple video sources via the *source* tag ([feature request](https://github.com/nkoehler/mat-video/issues/3))
+- **track:** added support for subtitles and text tracks via the *track* tag ([feature request](https://github.com/nkoehler/mat-video/issues/3))
+- **download:** updated the download control to use the current video source
+- **source:** added *matVideoSource* directive for change detection on the *source* tag
+- **track:** added *matVideoTrack* directive for change detection on the *track* tag
+- **player:** added public load method for reloading the video
+- **demo:** updated demo to use player load method where needed
+
+### Code Refactor:
+
+- **seeking:** reduced repetitive code in the seeking control
+- **keyboard:** optimized keyboard event listeners
+
+### Bug Fixes:
+
+- **dependencies:** updated @angular/material to the latest version
+- **dependencies:** updated @angular/cdk to the latest version
+
+
+
+# 2.1.0 (2018-05-12)
+
+### Features:
+
+- **looping:** added the ability to loop videos
+- **demo:** added the option to toggle the video looping
+
+### Code Refactor:
+
+- **seeking:** reduced repetitive code in the seeking control
+
+### Bug Fixes:
+
+- **dependencies:** updated all dependencies to their latest version
+
+
+
+# 2.0.0 (2018-05-08)
+
+### Breaking Changes:
+
+- **attribute:** removed *width* attribute, use CSS instead
+- **attribute:** removed *height* attribute, use CSS instead
+
+### Features:
+
+- **player:** video player is now responsive by default ([feature request](https://github.com/nkoehler/mat-video/issues/1))
+- **style:** CSS can now be used to control the video player size
+- **quality:** video quality indicator can now be toggled
+- **demo:** added responsive and fixed CSS options in place of *width* and *height* attributes
+- **demo:** added the option to toggle the video quality indicator
+
+### Code Refactor:
+
+- **style:** removed unnecessary code and CSS related to styling the video player
+
+### Bug Fixes:
+
+- **quality:** fixed a bug where the quality indicator was incorrectly styled
+- **dependencies:** updated @angular/material to the latest version
+- **dependencies:** updated @angular/cdk to the latest version
+
+
+
+# 1.4.0 (2018-05-06)
+
+### Features:
+
+- **angular:** added Angular 6 support
+
+
+
+# 1.3.1 (2018-05-05)
+
+### Code Refactor:
+
+- **player:** major refactor by moving all UI logic to their respective components
+- **seeking:** updated seeking component to use progress slider component
+- **internal:** updated progress slider component for easier reuse
+
+### Bug Fixes:
+
+- **player:** updated color attribute from string to ThemePalette
+- **style:** several CSS updates
+- **code:** several code style fixes
+
+
+
+# 1.3.0 (2018-04-28)
+
+### Features:
+
+- **keyboard:** keyboard can now be used to toggle fullscreen (f key), toggle mute (m key), and toggle playback (space key)
+- **player:** increased UI timeout from 1500ms to 2000ms
+- **player:** mouse pointer is now hidden when the UI fades away
+
+
+
+# 1.2.0 - 1.2.1 (2018-04-27)
+
+### Features:
+
+- **poster:** added the option to specify a poster image for the video
+- **buffering:** added a buffering indicator, including 4 built in types, and you can add your own by using a global class
+- **playback:** added the option to play/pause the video by clicking it
+- **seeking:** seeking the video now updates the time as you drag the slider
+- **buffering:** improved clarity for buffered progress
+- **fullscreen:** improved video and player scaling while in fullscreen
+- **demo:** added poster image support
+- **demo:** added buffering spinner support
+
+### Code Refactor:
+
+- **player:** rewrote and improved video player CSS and styling code
+- **player:** moved the volume control to the left side of the video player
+
+### Bug Fixes:
+
+- **player:** fixed the video buffer incorrectly displaying the wrong value during certain scenarios
+- **playback:** fixed the play button not being reset when changing the video source
+- **player:** video controls are now hidden while video metadata is being loaded
+- **player:** fixed a bug where videos with a greater height than width did not appear right in fullscreen
+- **npm:** updated peer dependencies for clearer compatability
+- **npm:** improved npm package installation
+
+
+
+# 1.1.1 - 1.1.2 (2018-04-26)
+
+### Code Refactor:
+
+- **player:** improved maintainability score by rewriting event listeners
+
+### Bug Fixes:
+
+- **player:** updated component to include icon css
+- **npm:** removed unnecessary @angular/flex-layout dependency
+- **npm:** removed unnecessary angular-bigscreen dependency
+- **npm:** updated peer dependencies for clearer compatability
+- **npm:** improved npm package installation
+
+
+
+# 1.1.0 (2018-04-25)
+
+### Features:
+
+- **theme:** player sliders can now be material themed
+- **download:** videos located on the same website server can be downloaded
+- **demo:** sample application has been visually improved
+- **demo:** theming the player and demo controls has been added as an option
+
+### Bug Fixes:
+
+- **demo:** removed unnecessary font dependency that was unused
+- **demo:** corrected demo page title
+- **style:** updated master stylesheet with reduced body tag margins
+- **style:** fixed multiple fonts being used
+
+
+
+# 1.0.0 - 1.0.4 (2018-04-23)
+
+### Initial Version
