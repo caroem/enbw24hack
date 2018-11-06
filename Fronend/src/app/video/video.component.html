@@ -10,24 +10,18 @@
 
     <div class="controls" *ngIf="videoLoaded" [ngClass]="getOverlayClass('visible', 'hidden')">
         <div class="progress">
-            <mat-seek-progress-control [color]="color" [video]="video"></mat-seek-progress-control>
+            <mat-seek-progress-control [color]="red" [video]="video"></mat-seek-progress-control>
         </div>
 
         <div class="menu">
             <div class="left">
-                <mat-play-button (playChanged)="playing = $event" [video]="video"></mat-play-button>
+               
 
-                <mat-volume-control [color]="color" [video]="video"></mat-volume-control>
+                <mat-volume-control ></mat-volume-control>
 
-                <mat-time-control [video]="video"></mat-time-control>
             </div>
 
             <div class="right">
-                <mat-quality-control *ngIf="quality" [video]="video"></mat-quality-control>
-
-                <mat-download-button *ngIf="download" [title]="title" [video]="video"></mat-download-button>
-
-                <mat-fullscreen-button *ngIf="fullscreen" (fullscreenChanged)="isFullscreen = $event" [player]="player"></mat-fullscreen-button>
             </div>
         </div>
     </div>
