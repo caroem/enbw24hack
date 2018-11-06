@@ -64,9 +64,9 @@
 }
 
 .hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 0.5s, opacity 0.5s linear;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 10s 10.5s, opacity 10.5s linear;
 }
 
 .show-mouse {

@@ -4,7 +4,7 @@
 
 .mat-slider-progress-background {
     position: absolute;
-    height: 2px;
+    height: 4px;
     width: 100%;
     fill: lightgrey;
 }
