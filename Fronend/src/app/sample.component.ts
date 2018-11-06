@@ -12,7 +12,7 @@ export class SampleComponent {
 
   ngclass = 'mat-video-responsive';
 
-  src = 'assets/Marktplatz-20180410-191302.mp4';
+  src = 'assets/Stichwunden und ein Knockout - Überwachungskamera fängt Massenschlägerei im größten US-Gefängnis ein.mp4';
   title = 'Marktplatz';
   width = 600;
   height = 337.5;
@@ -24,6 +24,6 @@ export class SampleComponent {
   fullscreen = false;
   color = 'primary';
   spinner = 'spin';
-  poster = 'assets/NASA.jpg';
+  poster = 'assets/kurve.PNG';
 
 }

@@ -14,7 +14,7 @@ div {
 }
 
 .mat-video-responsive {
-    width: 50%;
+    width: 70%;
 }
 
 .mat-video-fixed {
@@ -100,4 +100,11 @@ div {
   
 .item-margin {
     margin: 0 10px;
+}
+img {
+    position: absolute;
+  left: 15.5%;
+  top: 86.6%;
+width: 70%; 
+
 }

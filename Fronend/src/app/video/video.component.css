@@ -27,6 +27,7 @@
 }
 
 .controls {
+    top: 103%;
     color: white;
     position: absolute;
     left: 0px;
@@ -36,7 +37,8 @@
 }
 
 .controls .progress {
-    height: 26px;
+    
+    height: 30px;
 }
 
 .controls .menu {
